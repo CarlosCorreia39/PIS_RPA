@@ -14,11 +14,11 @@ DataEntity e_document is a Document […].
 Actors: 
 
 >Actor a_backOfficeOperator (Operator) is a User who Process documents. 
-
+>
 >Actor a_OrganizationalEntity (Customer) is a User, who creates documents. 
-
+>
 >Actor, a_Robot (Robot), is the robot responsible for robotic process automation. 
-
+>
 Use Cases: 
 UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
 
