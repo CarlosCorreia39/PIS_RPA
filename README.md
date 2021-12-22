@@ -6,8 +6,11 @@ DataEntity e_organizationalEntity is a Master […].
 DataEntity e_document is a Document […].  
 
 Actors: 
+
 Actor a_backOfficeOperator (Operator) is a User who Process documents. 
+
 Actor a_OrganizationalEntity (Customer) is a User, who creates documents. 
+
 Actor, a_Robot (Robot), is the robot responsible for robotic process automation. 
 
 Use Cases: 
