@@ -68,7 +68,7 @@ Soft Robot SICMAR:
 >
 >  extratedText, strtype, strNumber, strEntity, strCreationYear, strOC, newPdfFileName, oldPdfFileName 
 >
->//2nd: read and convert document file from “pdf” //into “txt” format 
+//2nd: read and convert document file from “pdf” //into “txt” format 
 >
 >begin 
 >
@@ -82,7 +82,7 @@ Soft Robot SICMAR:
 >
 >  END IF   
 >
->//3rd: replace wrong format information in the //document file 
+//3rd: replace wrong format information in the //document file 
 >
 >ExtratecdText = strText.Replace("Nº:","Number:") 
 >
@@ -90,7 +90,7 @@ Soft Robot SICMAR:
 >
 >ExtratecdText = strText.Replace("'","") 
 >
->//4th: extract information from the document file //using regular expressions 
+//4th: extract information from the document file //using regular expressions 
 >
 >IF String.IsNullOrEmpty(strCreationYear) 
 >
@@ -98,7 +98,7 @@ Soft Robot SICMAR:
 >
 >END IF 
 >
->//5th: write extracted information from the //document file in the excel file 
+//5th: write extracted information from the //document file in the excel file 
 >
 >   WRITE strType  	       
 >
@@ -108,13 +108,13 @@ Soft Robot SICMAR:
 >
 >    WRITE strCreationYear  	 
 >
->//6th: read new document filename in the excel  //file  
+//6th: read new document filename in the excel  //file  
 >
 >    READ 	newPdfFileName 
 >
 >  IF cell.Length < 17 OR cell.Length > 19 OR cell.Contains("/") OR String.IsNullOrEmpty(cell) 
 >
->//7th: change document filename and move it to a //specific folder  
+//7th: change document filename and move it to a //specific folder  
 >
 >   MOVE pdfFile INTO FailedPdfsFolder 
 >
@@ -136,7 +136,7 @@ Soft Robot SICMAR:
 >
 > END FOR 
 >
->//8th: send an email to the IT Manager   
+//8th: send an email to the IT Manager   
 >
 > SEND EMAIL	 
 >
