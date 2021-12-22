@@ -3,13 +3,12 @@
 
 DataEntities: 
 
-
-DataEntity e_backOfficeOperator is a Master […].  
-
-DataEntity e_organizationalEntity is a Master […].  
-
-DataEntity e_document is a Document […].  
-
+>
+>DataEntity e_backOfficeOperator is a Master […].  
+>
+>DataEntity e_organizationalEntity is a Master […].  
+>
+>DataEntity e_document is a Document […].  
 
 Actors: 
 
@@ -19,8 +18,10 @@ Actors:
 >
 >Actor, a_Robot (Robot), is the robot responsible for robotic process automation. 
 >
+
 Use Cases: 
-UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
+
+>UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
 
 
 # Specification-based on Use Cases Scenarios
