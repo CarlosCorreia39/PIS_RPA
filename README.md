@@ -142,3 +142,4 @@ Soft Robot SICMAR:
 >
 >end. 
 >
+![](images/Domain Model.JPG)
