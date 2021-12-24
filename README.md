@@ -1,4 +1,7 @@
-# Specification-based on Use Cases (uc_3_SoftRobot) 
+# Platform-Independent Specifications for Robotic Process Automation Applications
+
+## Specification
+### Specification-based on Use Cases (uc_3_SoftRobot) 
 
 
 DataEntities: 
@@ -24,7 +27,7 @@ Use Cases:
 >UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
 
 
-# Specification-based on Use Cases Scenarios
+### Specification-based on Use Cases Scenarios
 
 Use Cases Scenarios: 
 
@@ -50,7 +53,7 @@ UseCase uc_3_SoftRobot
 >
 >s9. Robot: Send an email message to the IT Manager specifying how many and which documents have already been successfully inserted into the system and how many and >which have failed. 
 
-# Specification based on Pseudocode
+### Specification based on Pseudocode
 
 Soft Robot SICMAR: 
 
@@ -142,9 +145,11 @@ Soft Robot SICMAR:
 >
 >end. 
 
-
+## Figures 
+### Figure 4: Domain model of the SICMAR (UML class diagram).
+![](Images/DomainModel.JPG)
+### Figure 5: Partial use case model of the SICMAR (UML notation).
+![](Images/UseCase.JPG)
+### Figure 6: Overview collaboration diagram of the SICMAR RPA robot (BPMN notation)
 ![](Images/BPMN.png)
 
-![](Images/DomainModel.JPG)
-
-![](Images/UseCase.JPG)
