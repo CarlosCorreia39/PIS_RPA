@@ -141,5 +141,6 @@ Soft Robot SICMAR:
 > SEND EMAIL	 
 >
 >end. 
->
-![](images/BPMN.png)
+
+
+![](Images/BPMN.png)
