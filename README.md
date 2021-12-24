@@ -145,6 +145,6 @@ Soft Robot SICMAR:
 
 ![](Images/BPMN.png)
 
-![](Images/Domain Model.JPG)
+![](Images/DomainModel.JPG)
 
-![](Images/Use Case.JPG)
+![](Images/UseCase.JPG)
