@@ -241,7 +241,9 @@ Soft Robot SICMAR:
 
 #### *** Settings ***
 Library           ocr.py
+
 Library           OperatingSystem
+
 Library           String
 
 #### *** Variables ***
@@ -249,17 +251,58 @@ Library           String
 
 #### *** Test Cases ***
 NICS
+
 ocr.OcrTesseract    ./Output/Images
+
   FOR    ${fileTxt}    IN    @{fileNamesTxt}
+  
    ${strText}    Get File   ./Output/txt/${fileTxt}
+   
   […] 
+  
   @{strDate}    Get Regexp Matches    ${strText}    (Data: ..-..-..)
+  
   […]
+  
   ${newPdfFileName}    Set Variable    ${type}${underscore}${entity}${underscore}${number}${underscore}${creationDate}.pdf
+  
   Move File    ./PDFs/${filePdf}    ./Output/CompletedFiles/${newPdfFileName}
+  
   […]
+  
   END
 
+### Spec. 10: Robot NICS defined in Robocorp.
+
+#### *** Settings ***
+Library         RPA.core.notebook
+
+Library         OperatingSystem
+
+Library         String
+
+Library         ocr.py
+
+#### *** Variables ***
+[…]
+
+#### *** Keywords ***
+Process all digitizing documents
+
+  ocr_tesseract  ./Output/Images
+  
+  FOR    ${fileTxt}    IN    @{fileNamesTxt}
+  
+    ${strText}=  Get File  ./Output/txt/${fileTxt}
+    
+    @{strDate}=    Get Regexp Matches    ${strText}    (Data: ..-..-..)
+    
+    […]
+    
+  END
+  
+#### *** Tasks ***
+  Process all digitising documents
 
 ____________________________________________________________________________________
 ## Figures 
