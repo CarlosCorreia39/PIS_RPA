@@ -306,6 +306,8 @@ Process all digitizing documents
 
 ____________________________________________________________________________________
 ## Figures 
+### Figure 2: Robot Framework – example of tables written in tab-separated values (TSV).
+![](Images/RFTSV.PNG)
 ### Figure 3: Robocorp – task.robot example.
 ![](Images/CertificateLevel1BC.PNG)
 ### Figure 4: Domain model of the NICS (UML class diagram).
