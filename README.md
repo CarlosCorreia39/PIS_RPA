@@ -65,6 +65,33 @@ Define the function fizzbuzz with an argument n.
   
     return the string representation of n. 
 
+### Spec. 4: Robot Framework – example of tables written in plain text. 
+
+*** Settings ***
+
+Library           ExcelLibrary
+
+
+*** Variables ***
+
+@{count1}
+
+${Count}          ${EMPTY}
+
+${VAR1}           ${EMPTY}
+
+
+*** Test Cases ***
+
+ExcelTC01
+
+    Open Excel    C:/RP/DemoProject/Demo.xls
+    
+    Put Number To Cell    sample123    1    0    10
+    
+    Save Excel    Demo2.xls
+
+
 
 ### Spec. 6: Specification-based on Use Cases (uc_3_SoftRobot)
 
