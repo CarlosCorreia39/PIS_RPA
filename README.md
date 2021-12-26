@@ -313,7 +313,7 @@ ________________________________________________________________________________
 ### Figure 6: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
 ![](Images/BPMN_1.PNG)
 ### Figure 7: Robot NICS defined in UiPath.
-![](Images/SICMAR.PNG)
+![](Images/SICMAR.png)
 
 ____________________________________________________________________________________
 
