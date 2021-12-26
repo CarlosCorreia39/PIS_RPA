@@ -306,6 +306,8 @@ Process all digitizing documents
 
 ____________________________________________________________________________________
 ## Figures 
+### Figure 3: Robocorp – task.robot example.
+![](Images/CertificateLevel1BC.PNG)
 ### Figure 4: Domain model of the NICS (UML class diagram).
 ![](Images/DomainModel.JPG)
 ### Figure 5: Partial use case model of the NICS (UML notation).
