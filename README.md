@@ -13,6 +13,19 @@ WITH A VERBOSE WRITING STYLE (CNL-B)
 >2. Actor: Browses the list of Invoices and consult Invoices
 >3. Actor: Selects the option Close.
 
+### Spec. 2: Example of source code written in Python 
+
+def: fizzbuzz(n):
+  if not isinstance(n, int):
+    raise TypeError(‘n is not an integer’)
+  if n % 3 == 0:
+    return ‘fizzbuzz’ if n % 5 == 0 else ‘fizz’
+  elif n % 5 == 0:
+    return ‘buzz’
+  else:
+    return str(n)
+
+
 ### Spec. 6: Specification-based on Use Cases (uc_3_SoftRobot)
 
 
