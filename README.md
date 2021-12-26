@@ -152,6 +152,7 @@ Soft Robot SICMAR:
 ![](Images/UseCase.JPG)
 ### Figure 6: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
 ![](Images/BPMN.png)
+![](Images/BPMN_1.PNG)
 
 ____________________________________________________________________________________
 
