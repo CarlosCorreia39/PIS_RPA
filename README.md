@@ -146,10 +146,16 @@ Soft Robot SICMAR:
 >end. 
 
 ## Figures 
-### Figure 4: Domain model of the SICMAR (UML class diagram).
+### Figure 4: Domain model of the NICS (UML class diagram).
 ![](Images/DomainModel.JPG)
-### Figure 5: Partial use case model of the SICMAR (UML notation).
+### Figure 5: Partial use case model of the NICS (UML notation).
 ![](Images/UseCase.JPG)
-### Figure 6: Overview collaboration diagram of the SICMAR RPA robot (BPMN notation)
+### Figure 6: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
 ![](Images/BPMN.png)
 
+____________________________________________________________________________________
+
+### Processing Cataloging Documentation (BPMN notation)
+![](Images/ProcessingCatalogingDocumentation.png)
+### Register Cataloging Documents (BPMN notation)
+![](Images/RegisterCatalogingDocuments.png)
