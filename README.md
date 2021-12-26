@@ -151,7 +151,6 @@ Soft Robot SICMAR:
 ### Figure 5: Partial use case model of the NICS (UML notation).
 ![](Images/UseCase.JPG)
 ### Figure 6: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
-![](Images/BPMN.png)
 ![](Images/BPMN_1.PNG)
 
 ____________________________________________________________________________________
