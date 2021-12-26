@@ -156,6 +156,6 @@ Soft Robot SICMAR:
 ____________________________________________________________________________________
 
 ### Processing Cataloging Documentation (BPMN notation)
-![](Images/ProcessingCatalogingDocumentation.png)
+![](Images/ProcessingCatalogingDocumentation.PNG)
 ### Register Cataloging Documents (BPMN notation)
-![](Images/RegisterCatalogingDocuments.png)
+![](Images/RegisterCatalogingDocuments.PNG)
