@@ -33,6 +33,21 @@ def: fizzbuzz(n):
   
     return str(n)
 
+### Spec. 3: Example of corresponding pseudocode written in English (Spec. 2) 
+
+Define the function fizzbuzz with an argument n.
+  if n is not an integer value,
+    throw a TypeError exception with a message …
+  if n is divisible by 3,
+    if n is divisible by 5
+      return 'fizzbuzz'
+    else
+      'fizz'
+  else if n is divisible by 5,
+    return the string 'buzz'.
+  otherwise,
+    return the string representation of n. 
+
 
 ### Spec. 6: Specification-based on Use Cases (uc_3_SoftRobot)
 
