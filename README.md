@@ -306,6 +306,8 @@ Process all digitizing documents
 
 ____________________________________________________________________________________
 ## Figures 
+### Figure 1: Magic Quadrant for Robotic Process Automation (June 2021) 
+![](Images/MQ2021.PNG)
 ### Figure 2: Robot Framework – example of tables written in tab-separated values (TSV).
 ![](Images/RFTSV.PNG)
 ### Figure 3: Robocorp – task.robot example.
