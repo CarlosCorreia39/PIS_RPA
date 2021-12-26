@@ -67,12 +67,12 @@ Define the function fizzbuzz with an argument n.
 
 ### Spec. 4: Robot Framework – example of tables written in plain text. 
 
-*** Settings ***
+#### *** Settings ***
 
 Library           ExcelLibrary
 
 
-*** Variables ***
+#### *** Variables ***
 
 @{count1}
 
@@ -81,7 +81,7 @@ ${Count}          ${EMPTY}
 ${VAR1}           ${EMPTY}
 
 
-*** Test Cases ***
+#### *** Test Cases ***
 
 ExcelTC01
 
