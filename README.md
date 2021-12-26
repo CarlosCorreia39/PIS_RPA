@@ -237,6 +237,31 @@ Soft Robot SICMAR:
 >
 >end. 
 
+### Spec. 9: Robot NICS defined in Robot Framework.
+
+#### *** Settings ***
+Library           ocr.py
+Library           OperatingSystem
+Library           String
+
+#### *** Variables ***
+[…]
+
+#### *** Test Cases ***
+NICS
+ocr.OcrTesseract    ./Output/Images
+  FOR    ${fileTxt}    IN    @{fileNamesTxt}
+   ${strText}    Get File   ./Output/txt/${fileTxt}
+  […] 
+  @{strDate}    Get Regexp Matches    ${strText}    (Data: ..-..-..)
+  […]
+  ${newPdfFileName}    Set Variable    ${type}${underscore}${entity}${underscore}${number}${underscore}${creationDate}.pdf
+  Move File    ./PDFs/${filePdf}    ./Output/CompletedFiles/${newPdfFileName}
+  […]
+  END
+
+
+____________________________________________________________________________________
 ## Figures 
 ### Figure 4: Domain model of the NICS (UML class diagram).
 ![](Images/DomainModel.JPG)
