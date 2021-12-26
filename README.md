@@ -16,13 +16,21 @@ WITH A VERBOSE WRITING STYLE (CNL-B)
 ### Spec. 2: Example of source code written in Python 
 
 >def: fizzbuzz(n):
+>
 >  if not isinstance(n, int):
+>  
 >    raise TypeError(‘n is not an integer’)
+>    
 >  if n % 3 == 0:
+>  
 >    return ‘fizzbuzz’ if n % 5 == 0 else ‘fizz’
+>    
 >  elif n % 5 == 0:
+>  
 >    return ‘buzz’
+>    
 >  else:
+>  
 >    return str(n)
 
 
