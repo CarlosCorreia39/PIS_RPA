@@ -6,11 +6,17 @@
 
 WITH A VERBOSE WRITING STYLE (CNL-B) 
 >Use Case' Scenarios:
+>
 >UseCase uc_1_ManageInvoices
+>
 >[...]
+>
 >0. Scenario MainScenario (Main):
+>
 >1. System: Shows a list of Invoices and available actions, namely CreateInvoice, UpdateInvoice, ConfirmPayment, SendInvoices, and PrintInvoice. In addition, there >are actions to Close the interaction space, Select/Unselect Invoices, Search Invoices, and Filter Invoices.
+>
 >2. Actor: Browses the list of Invoices and consult Invoices
+>
 >3. Actor: Selects the option Close.
 
 ### Spec. 2: Example of source code written in Python 
