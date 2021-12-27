@@ -1,6 +1,6 @@
-# MODELSWARD 2022
-____________________________________________________________________________________
-# Paper Title: Platform-Independent Specifications for Robotic Process Automation Applications
+# Carlos Correia, Alberto Rodrigues da Silva, 
+# "Platform-Independent Specifications for  Robotic Process Automation Applications"
+# Proceedings of the MODELSWARD 2022, INSTIC.
 ____________________________________________________________________________________
 # Abstract: 
 Robotic Process Automation (RPA) is an emerged technology that uses software robots to automate human-intensive repetitive tasks, traditionally associated with bureaucratic and low-complexity processes. This article introduced a concrete scenario implemented with three popular RPA tools (i.e., with UiPath, Robocorp, and Robot Framework) and supported the research. First, the paper introduces informally that scenario, implemented with the platform-specific languages of these tools, namely with keyword-based scripts and other visual models. The challenge addressed in this paper is how to describe RPA applications (or just "soft robots") in a platform-independent way, close to natural language, and easily understandable by non-technical people. Established on the preliminary results, we conclude that adopting controlled natural languages based on use cases and scenarios simplifies the specification and development of RPA scenarios, no matter the used RPA tool. For future works, use the best notation to specify robots in a platform-independent approach and explore transformation mechanisms for the proprietary format (i.e., UiPath, Robot Framework, Robocorp). 
