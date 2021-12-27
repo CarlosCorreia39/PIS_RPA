@@ -9,22 +9,19 @@ ________________________________________________________________________________
 
 ### Spec. 1: Partial specification of a use case scenario 
 
-WITH A VERBOSE WRITING STYLE (CNL-B) 
->Use Case' Scenarios:
->
 >UseCase uc_1_ManageInvoices
 >
 >[...]
 >
 >0. Scenario MainScenario (Main):
 >
->1. System: Shows a list of Invoices and available actions, namely CreateInvoice, UpdateInvoice, ConfirmPayment, SendInvoices, and PrintInvoice. In addition, there >are actions to Close the interaction space, Select/Unselect Invoices, Search Invoices, and Filter Invoices.
+>1. System: Shows a list of Invoices and available actions, namely CreateInvoice, UpdateInvoice, ConfirmPayment, SendInvoices, and >PrintInvoice. In addition, there are actions to Close the interaction space, Select/Unselect Invoices, Search Invoices, and Filter >Invoices.
 >
 >2. Actor: Browses the list of Invoices and consult Invoices
 >
 >3. Actor: Selects the option Close.
 
-### Spec. 2: Example of source code written in Python 
+### Spec. 2: Example of pseudocode written in English  
 
 def: fizzbuzz(n):
 
@@ -44,87 +41,14 @@ def: fizzbuzz(n):
   
     return str(n)
 
-### Spec. 3: Example of corresponding pseudocode written in English (Spec. 2) 
+### Spec.3: Partial informal requirements of the NICS.
+NICS is the short name for the “Navy Cataloguing Information System”, which allows users to search for articles/parts. Articles refer to parts of the navy ship’s equipment. The application allows the search for articles/parts in three different ways, namely: “by free research”, “by equipment research”, or “by article/part research”. Each article/part has detailed information about its history and associated documents.
+A user has a user profile, namely as ITManager, backOfficeOperator, or organizationalEntity.
+An ITManager registers and manages users […].
+An organizationalEntity corresponds to a navy department responsible for creating Cataloguing documents.
+[…].
 
-Define the function fizzbuzz with an argument n.
-
-  if n is not an integer value,
-  
-    throw a TypeError exception with a message …
-    
-  if n is divisible by 3,
-  
-    if n is divisible by 5
-    
-      return 'fizzbuzz'
-      
-    else
-    
-      'fizz'
-      
-  else if n is divisible by 5,
-  
-    return the string 'buzz'.
-    
-  otherwise,
-  
-    return the string representation of n. 
-
-### Spec. 4: Robot Framework – example of tables written in plain text. 
-
-#### *** Settings ***
-
-Library           ExcelLibrary
-
-
-#### *** Variables ***
-
-@{count1}
-
-${Count}          ${EMPTY}
-
-${VAR1}           ${EMPTY}
-
-
-#### *** Test Cases ***
-
-ExcelTC01
-
-    Open Excel    C:/RP/DemoProject/Demo.xls
-    
-    Put Number To Cell    sample123    1    0    10
-    
-    Save Excel    Demo2.xls
-
-
-
-### Spec. 6: Specification-based on Use Cases (uc_3_SoftRobot)
-
-
-DataEntities: 
-
->
->DataEntity e_backOfficeOperator is a Master […].  
->
->DataEntity e_organizationalEntity is a Master […].  
->
->DataEntity e_document is a Document […].  
-
-Actors: 
-
->Actor a_backOfficeOperator (Operator) is a User who Process documents. 
->
->Actor a_OrganizationalEntity (Customer) is a User, who creates documents. 
->
->Actor, a_Robot (Robot), is the robot responsible for robotic process automation. 
->
-
-Use Cases: 
-
->UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
-
-
-### Spec. 7: Specification-based on Use Cases Scenarios.
+### Spec. 4: Specification-based on Use Cases Scenarios.
 
 Use Cases Scenarios: 
 
@@ -150,9 +74,9 @@ UseCase uc_3_SoftRobot
 >
 >s9. Robot: Send an email message to the IT Manager specifying how many and which documents have already been successfully inserted into the system and how many and >which have failed. 
 
-### Spec. 8: Specification based on Pseudocode
+### Spec. 5: Specification based on Pseudocode
 
-Soft Robot SICMAR: 
+Soft Robot NICS: 
 
 //1st: declaration of variables 
 >
@@ -242,7 +166,7 @@ Soft Robot SICMAR:
 >
 >end. 
 
-### Spec. 9: Robot NICS defined in Robot Framework.
+### Spec. 6: Robot NICS defined in Robot Framework.
 
 #### *** Settings ***
 Library           ocr.py
@@ -277,7 +201,7 @@ ocr.OcrTesseract    ./Output/Images
   
   END
 
-### Spec. 10: Robot NICS defined in Robocorp.
+### Spec. 7: Robot NICS defined in Robocorp.
 
 #### *** Settings ***
 Library         RPA.core.notebook
@@ -308,27 +232,102 @@ Process all digitizing documents
   
 #### *** Tasks ***
   Process all digitising documents
-
 ____________________________________________________________________________________
+### Spec. A: Example of corresponding pseudocode written in English (Spec. 2) 
+
+Define the function fizzbuzz with an argument n.
+
+  if n is not an integer value,
+  
+    throw a TypeError exception with a message …
+    
+  if n is divisible by 3,
+  
+    if n is divisible by 5
+    
+      return 'fizzbuzz'
+      
+    else
+    
+      'fizz'
+      
+  else if n is divisible by 5,
+  
+    return the string 'buzz'.
+    
+  otherwise,
+  
+    return the string representation of n. 
+    
+### Spec. B: Robot Framework – example of tables written in plain text. 
+
+#### *** Settings ***
+
+Library           ExcelLibrary
+
+
+#### *** Variables ***
+
+@{count1}
+
+${Count}          ${EMPTY}
+
+${VAR1}           ${EMPTY}
+
+
+#### *** Test Cases ***
+
+ExcelTC01
+
+    Open Excel    C:/RP/DemoProject/Demo.xls
+    
+    Put Number To Cell    sample123    1    0    10
+    
+    Save Excel    Demo2.xls
+
+### Spec. C: Specification-based on Use Cases (uc_3_SoftRobot)
+
+
+DataEntities: 
+
+>
+>DataEntity e_backOfficeOperator is a Master […].  
+>
+>DataEntity e_organizationalEntity is a Master […].  
+>
+>DataEntity e_document is a Document […].  
+
+Actors: 
+
+>Actor a_backOfficeOperator (Operator) is a User who Process documents. 
+>
+>Actor a_OrganizationalEntity (Customer) is a User, who creates documents. 
+>
+>Actor, a_Robot (Robot), is the robot responsible for robotic process automation. 
+>
+
+Use Cases: 
+
+>UseCase uc_3_SoftRobot is a EntitiesManage with e_document, actor_a_Robot. 
+
+____________________________________________________________
 ## Figures 
 ### Figure 1: Magic Quadrant for Robotic Process Automation (June 2021) 
 ![](Images/MQ2021.PNG)
-### Figure 2: Robot Framework – example of tables written in tab-separated values (TSV).
-![](Images/RFTSV.PNG)
-### Figure 3: Robocorp – task.robot example.
-![](Images/CertificateLevel1BC.PNG)
-### Figure 4: Domain model of the NICS (UML class diagram).
+### Figure 2: Domain model of the NICS (UML class diagram).
 ![](Images/DomainModel.JPG)
-### Figure 5: Partial use case model of the NICS (UML notation).
+### Figure 3: Use case model of the NICS (UML notation).
 ![](Images/UseCase.JPG)
-### Figure 6: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
-![](Images/BPMN_1.PNG)
-### Figure 7: Robot NICS defined in UiPath.
+### Figure 4: Robot NICS defined in UiPath.
 ![](Images/SICMAR.png)
-
 ____________________________________________________________________________________
-
-### Processing Cataloging Documentation (BPMN notation)
+### Figure A: Robot Framework – example of tables written in tab-separated values (TSV).
+![](Images/RFTSV.PNG)
+### Figure B: Robocorp – task.robot example.
+![](Images/CertificateLevel1BC.PNG)
+### Figure C: Overview collaboration diagram of the NICS RPA robot (BPMN notation)
+![](Images/BPMN_1.PNG)
+### Figure E: Processing Cataloging Documentation (BPMN notation)
 ![](Images/ProcessingCatalogingDocumentation.PNG)
-### Register Cataloging Documents (BPMN notation)
+### Figure F: Register Cataloging Documents (BPMN notation)
 ![](Images/RegisterCatalogingDocuments.PNG)
